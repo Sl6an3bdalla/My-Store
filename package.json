@@ -1,0 +1,24 @@
+{
+  "name": "my-store",
+  "version": "1.0.0",
+  "description": "my store",
+  "main": "index.js",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sl6an3bdalla/My-Store.git"
+  },
+  "author": "sultan abdulla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sl6an3bdalla/My-Store/issues"
+  },
+  "homepage": "https://github.com/Sl6an3bdalla/My-Store#readme"
+}
