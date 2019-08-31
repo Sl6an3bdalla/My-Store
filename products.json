@@ -1,0 +1,38 @@
+[
+  {
+    "name": "SB air intake",
+    "price": "1500 AED",
+    "imgURL": "./Prod./1.jpg",
+    "description": " "
+  },
+  {
+    "name": "aFe air intake",
+    "price": "1500 AED",
+    "imgURL": "./Prod./2.jpg",
+    "description": " "
+  },
+  {
+    "name": "GT Momentum aFe air intake",
+    "price": "1500 AED",
+    "imgURL": "./Prod./3.jpg",
+    "description": " "
+  },
+  {
+    "name": "GT Momentum aFe air intake",
+    "price": "1500 AED",
+    "imgURL": "./Prod./4.jpg",
+    "description": " "
+  },
+  {
+    "name": "K&N air intake",
+    "price": "1500 AED",
+    "imgURL": "./Prod./5.jpg",
+    "description": " "
+  },
+  {
+    "name": "DDR air intake",
+    "price": "1500 AED",
+    "imgURL": "./Prod./6.jpg",
+    "description": " "
+  }
+]
