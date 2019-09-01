@@ -46,23 +46,25 @@
             
             <li class="color"><p>Color</p>
             <ul>
-              <li><input type="checkbox"> Red<br></li>
-              <li><input type="checkbox"> Black<br></li>
-              <li><input type="checkbox"> Green<br></li>
-              <li><input type="checkbox"> Blue<br></li>
+              <li><input id="red" type="checkbox"> Red<br></li>
+              <li><input id="black" type="checkbox"> Black<br></li>
+              <li><input id="blue" type="checkbox"> Blue<br></li>
             
             </ul></li>
+            <li> <button type="submit" id='filter' onclick="color()">Filter</button></li>
             
             <li class="color"><p>Price: </p><p id="value"></p>
               <input type="range" min="1" max="3000" value="50" class="slider" id="myRange"></li>
+              <li> <button type="submit" id='filter' onclick="price()">Filter</button></li>
            
             <li class="color"><p>Brand</p><ul>
-                <li><input type="checkbox"> K&N<br></li>
-                <li><input type="checkbox"> SB<br></li>
-                <li><input type="checkbox"> aFe<br></li>
-                <li><input type="checkbox"> DDR<br></li>
+                <li><input id="kn" type="checkbox"> K&N<br></li>
+                <li><input id="sb" type="checkbox"> SB<br></li>
+                <li><input id="afe" type="checkbox"> aFe<br></li>
+                <li><input id="ddr" type="checkbox"> DDR<br></li>
               
               </ul></li>
+              <li> <button type="submit" id='filter' onclick="brand()">Filter</button></li>
           </ul>
         </div>
         <div id="HelpN">

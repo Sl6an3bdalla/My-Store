@@ -19,9 +19,6 @@ function addPro() {
     }
     document.getElementById("numPro").innerHTML = localStorage.clickcount;
   }
-  // x = localStorage.getItem("numPro");
-  // x++;
-  // document.getElementById("numPro").innerHTML = x;
 }
 function fillterdProducts() {
   var search_input = document.getElementById("searchBox").value;
@@ -33,6 +30,112 @@ function fillterdProducts() {
     })
   );
 }
+
+function color() {
+  document.getElementById("items").innerHTML = "";
+  red();
+  black();
+  blue();
+}
+function red() {
+  if (document.getElementById("red").checked) {
+    displayProducts(
+      productsData.filter(data => {
+        var colors = data.color;
+        return colors.includes("red");
+      })
+    );
+  }
+}
+function black() {
+  if (document.getElementById("black").checked) {
+    displayProducts(
+      productsData.filter(data => {
+        var colors = data.color;
+        return colors.includes("black");
+      })
+    );
+  }
+}
+function blue() {
+  if (document.getElementById("blue").checked) {
+    displayProducts(
+      productsData.filter(data => {
+        var colors = data.color;
+        return colors.includes("blue");
+      })
+    );
+  }
+}
+
+function brand() {
+  document.getElementById("items").innerHTML = "";
+  afe();
+  kn();
+  sb();
+  ddr();
+}
+
+function afe() {
+  if (document.getElementById("afe").checked) {
+    displayProducts(
+      productsData.filter(data => {
+        var brand = data.brand;
+        return brand.includes("afe");
+      })
+    );
+  }
+}
+
+function kn() {
+  if (document.getElementById("kn").checked) {
+    displayProducts(
+      productsData.filter(data => {
+        var brand = data.brand;
+        return brand.includes("kn");
+      })
+    );
+  }
+}
+
+function sb() {
+  if (document.getElementById("sb").checked) {
+    displayProducts(
+      productsData.filter(data => {
+        var brand = data.brand;
+        return brand.includes("SB");
+      })
+    );
+  }
+}
+
+function ddr() {
+  if (document.getElementById("ddr").checked) {
+    displayProducts(
+      productsData.filter(data => {
+        var brand = data.brand;
+        return brand.includes("ddr");
+      })
+    );
+  }
+}
+function price() {
+  document.getElementById("items").innerHTML = "";
+  displayProducts(
+    productsData.filter(data => {
+      var price = data.price;
+      return price < slider.value;
+    })
+  );
+}
+
+// function filter() {
+//   document.getElementById("items").innerHTML = "";
+//   color();
+//   //price();
+//   //brand();
+// }
+
 var productsData;
 
 fetch("./products.json")

@@ -10,6 +10,7 @@ body {
   min-height: 100%;
   overflow: auto;
   font-family: "Lato", sans-serif;
+  margin-bottom: -27px;
 }
 
 #header {
@@ -98,6 +99,16 @@ body {
 .color {
   background-color: black;
   color: white;
+}
+#filter {
+  background: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  margin-top: 25px;
+  height: 28px;
+  width: 130px;
+  font-size: 20px;
 }
 
 .sidenav {
